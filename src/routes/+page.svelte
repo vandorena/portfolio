@@ -3,7 +3,7 @@
 		<h1 class="text-4xl md:text-6xl font-bold text-white mb-6 text-center">
 			Welcome to My (Alex Van Doren's) Portfolio
 		</h1>
-		<p class="text-lg text-white/90 text-center max-w-2xl">
+		<p class="text-lg text-white/90 text-center">
 			I'm a Software Engineer at Hack Club.
         </p>
 		
