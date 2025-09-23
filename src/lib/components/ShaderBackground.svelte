@@ -270,6 +270,8 @@
 		if (!gl) return;
 		// Ensure CSS size is set by stylesheet; use clientWidth/Height for DPR backing size
 		allocRenderTargets();
+		// Restart simulation on resize by resetting the frame counter
+		frameCount = 0;
 	}
 
 	let lastTime = 0;
