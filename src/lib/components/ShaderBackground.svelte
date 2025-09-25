@@ -320,7 +320,7 @@
 
 <canvas
 	bind:this={canvas}
-	class="fixed inset-0 w-full h-full -z-10 pointer-events-none scale-300"
+	class="fixed inset-0 w-full h-full z-0 pointer-events-none scale-300"
 ></canvas>
 
 <style>
