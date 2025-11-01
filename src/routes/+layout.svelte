@@ -12,4 +12,7 @@
 </svelte:head>
 <ShaderBackground/>
 <NavBar/>
+<div class="py-5">
+
+</div>
 {@render children?.()}

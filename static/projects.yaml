@@ -4,3 +4,8 @@ projects:
     image: /accelerate-screenie.png
     title: Accelerate
     description: My best website yet. (The coolest Hack Club YSWS)
+  - link: https://armed.hackclub.com
+    iframe: https://armed.hackclub.com
+    image: /armed-screenie.png
+    title: Armed
+    description: A YSWS I ran for Hack Club, that encouraged teenagers to learn ARM64 Assembly

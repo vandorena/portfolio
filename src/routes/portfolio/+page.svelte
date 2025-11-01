@@ -65,7 +65,7 @@
 
 	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
 		{#each projects as project}
-			<a href={project.link} onclick={(e) => openIframe(project.iframe, e)}>
+			<a href={project.link} onclick={(e) => openIframe(project.iframe, e)} class="h-full flex">
 				<ProfileCard>
 					<img src={project.image} alt={project.title} class="mb-4 rounded-lg shadow-lg" />
 					<h2 class="text-2xl font-bold mb-4">{project.title}</h2>
