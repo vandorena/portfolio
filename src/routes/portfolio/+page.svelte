@@ -1,9 +1,19 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import ProfileCard from '$lib/components/ProfileCard.svelte';
+	import yaml from 'js-yaml';
+
+	interface Project {
+		link: string;
+		iframe: string;
+		image: string;
+		title: string;
+		description: string;
+	}
 
 	let iframeUrl = $state<string | null>(null);
 	let showModal = $state(false);
+	let projects = $state<Project[]>([]);
 
 	function openIframe(url: string, event: MouseEvent) {
 		event.preventDefault();
@@ -16,7 +26,22 @@
 		iframeUrl = null;
 	}
 
+	async function loadProjects() {
+		try {
+			const response = await fetch('/projects.yaml');
+			const text = await response.text();
+			const data = yaml.load(text) as { projects: Project[] };
+			projects = data.projects || [];
+		} catch (error) {
+			console.error('Failed to load projects:', error);
+			projects = [];
+		}
+	}
+
 	onMount(async () => {
+		// Load projects from YAML
+		await loadProjects();
+
 		// dynamic import so this only runs in the browser (avoids SSR issues)
 		const mod = await import('$lib/tilt.js');
 		const VanillaTilt = (mod && (mod.default ?? mod)) as any;
@@ -39,15 +64,15 @@
 	</h1>
 
 	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-
-			<a href="https://accelerate.hackclub.com" onclick={(e) => openIframe('https://accelerate.hackclub.com', e)}>
+		{#each projects as project}
+			<a href={project.link} onclick={(e) => openIframe(project.iframe, e)}>
 				<ProfileCard>
-					<img src="/accelerate-screenie.png" alt="Screenshot of Accelerate" class="mb-4 rounded-lg shadow-lg" />
-					<h2 class="text-2xl font-bold mb-4">Accelerate</h2>
-					<p class="text-lg">My best website yet. (The coolest Hack Club YSWS)</p>
+					<img src={project.image} alt={project.title} class="mb-4 rounded-lg shadow-lg" />
+					<h2 class="text-2xl font-bold mb-4">{project.title}</h2>
+					<p class="text-lg">{project.description}</p>
 				</ProfileCard>
 			</a>
-
+		{/each}
 	</div>
 </section>
 
