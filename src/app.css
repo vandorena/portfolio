@@ -1,2 +1,23 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
+
+@font-face {
+  font-family: "Sixtyfour";
+  src: url('/Sixtyfour-Regular-VariableFont_BLED,SCAN.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@theme {
+  --font-family: "Sixtyfour", sans-serif;
+}
+
+body {
+  font-family: "Sixtyfour", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "BLED" 0,
+    "SCAN" 0;
+}

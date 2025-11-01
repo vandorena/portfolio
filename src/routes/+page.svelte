@@ -19,10 +19,10 @@
 
 </script>
 <div class="min-h-screen flex flex-col items-center justify-center relative z-10">
-	<div class="backdrop-blur-sm bg-white/10 rounded-2xl p-8 border border-white/20 shadow-2xl">
-		<h1 data-tilt class="text-4xl md:text-6xl font-bold text-white mb-6 text-center">
+	<div class=" bg-neutral-950/20 py-10 px-6 rotate-1">
+		<h1 class="text-4xl md:text-6xl font-bold text-white mb-6 text-center">
 			I'm Alex Van Doren
 		</h1>
-		
+		<h2 class="text-2xl md:text-4xl font-condensed text-white mb-6 text-center">I'm a Gap Year engineer at Hack Club :D</h2>
 	</div>
 </div>

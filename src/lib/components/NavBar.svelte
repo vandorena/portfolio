@@ -21,7 +21,7 @@
 </script>
 
 <!-- Hamburger Menu Button (Mobile Only) -->
-<button class="hamburger z-50" onclick={toggleMenu} aria-label="Toggle menu">
+<button class="hamburger z-50 hover:cursor-pointer hover:scale-105" onclick={toggleMenu} aria-label="Toggle menu">
     <span class="hamburger-line"></span>
     <span class="hamburger-line"></span>
     <span class="hamburger-line"></span>
@@ -29,10 +29,10 @@
 
 <!-- Navigation Links -->
 <nav class="navbar z-50" class:menu-open={menuOpen}>
-    <a href="/" class="nav-button text-xl py-2" style="background-image: {currentBackgroundImage};">About Me</a>
-    <a href="/sailing" class="nav-button text-xl py-2" style="background-image: {currentBackgroundImage};">Sailing</a>
-    <a href="/hackclub" class="nav-button text-xl py-2" style="background-image: {currentBackgroundImage};">Hack Club</a>
-    <a href="/portfolio" class="nav-button text-xl py-2" style="background-image: {currentBackgroundImage};">Things I've Made</a>
+    <a href="/" class="nav-button text-xl py-2 hover:scale-105 mr-4" style="background-image: {currentBackgroundImage};">About Me</a>
+    <a href="/sailing" class="nav-button text-xl py-2 hover:scale-105 mr-4" style="background-image: {currentBackgroundImage};">Sailing</a>
+    <a href="/hackclub" class="nav-button text-xl py-2 hover:scale-105 mr-4" style="background-image: {currentBackgroundImage};">Hack Club</a>
+    <a href="/portfolio" class="nav-button text-xl py-2 hover:scale-105" style="background-image: {currentBackgroundImage};">Things I've Made</a>
 </nav>
 
 <style>
@@ -53,7 +53,7 @@
         background-repeat: no-repeat;
         color: white;
         text-shadow: 1px 1px 2px black;
-        width: calc(100vw / 7);
+        width: calc(200vw / 10);
         display: inline-block;
         text-align: center;
         padding: 0.5rem 1rem;
