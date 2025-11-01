@@ -19,7 +19,7 @@
 
 </script>
 <div class="min-h-screen flex flex-col items-center justify-center relative z-10">
-	<div class=" bg-neutral-950/20 py-10 px-6 rotate-1">
+	<div data-tilt class=" bg-neutral-950/20 py-10 px-6 rotate-1 cursor-crosshair">
 		<h1 class="text-4xl md:text-6xl font-bold text-white mb-6 text-center">
 			I'm Alex Van Doren
 		</h1>

@@ -28,7 +28,7 @@
 </button>
 
 <!-- Navigation Links -->
-<nav class="navbar z-50" class:menu-open={menuOpen}>
+<nav class="navbar z-5 mb-10" class:menu-open={menuOpen}>
     <a href="/" class="nav-button text-xl py-2 hover:scale-105 mr-4" style="background-image: {currentBackgroundImage};">About Me</a>
     <a href="/sailing" class="nav-button text-xl py-2 hover:scale-105 mr-4" style="background-image: {currentBackgroundImage};">Sailing</a>
     <a href="/hackclub" class="nav-button text-xl py-2 hover:scale-105 mr-4" style="background-image: {currentBackgroundImage};">Hack Club</a>
