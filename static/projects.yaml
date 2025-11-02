@@ -9,3 +9,8 @@ projects:
     image: /armed-screenie.png
     title: Armed
     description: A YSWS I ran for Hack Club, that encouraged teenagers to learn ARM64 Assembly
+  - link: https://smelt.hackclub.com
+    iframe: https://smelt.hackclub.com
+    image: /smelt-screenie.png
+    title: Smelt
+    description: A YSWS based around web development using Svelte, and Sveltekit.
