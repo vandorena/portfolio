@@ -27,7 +27,7 @@
 	</div>
 	<div class="prose prose-invert text-center mt-8 max-w-3xl">
 		<p>
-			Welcome to my personal website! <br> tl;dr: I'm 18, I love sailing, I live in Burlington, and I make really cool looking websites for Hack Club!
+			Welcome to my personal website! <br> tl;dr: I'm 18, I love sailing, I live in Burlington, and I make really cool looking websites, and fun project based education programs for Hack Club!
 		</p>
 	</div>
 </div>
