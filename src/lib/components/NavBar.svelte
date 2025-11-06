@@ -11,6 +11,10 @@
         menuOpen = !menuOpen;
     }
 
+    function closeMenu() {
+        menuOpen = false;
+    }
+
     onMount(() => {
         const interval = setInterval(() => {
             currentImageIndex = (currentImageIndex + 1) % images.length;
@@ -21,18 +25,18 @@
 </script>
 
 <!-- Hamburger Menu Button (Mobile Only) -->
-<button class="hamburger z-50 hover:cursor-pointer hover:scale-105" onclick={toggleMenu} aria-label="Toggle menu">
+<button class="hamburger hover:cursor-pointer hover:scale-105 z-50" onclick={toggleMenu} aria-label="Toggle menu">
     <span class="hamburger-line"></span>
     <span class="hamburger-line"></span>
     <span class="hamburger-line"></span>
 </button>
 
 <!-- Navigation Links -->
-<nav class="navbar z-50 mb-10" class:menu-open={menuOpen}>
-    <a href="/" class="nav-button text-xl py-2 hover:scale-105 mr-4" style="background-image: {currentBackgroundImage};">About Me</a>
-    <a href="/sailing" class="nav-button text-xl py-2 hover:scale-105 mr-4" style="background-image: {currentBackgroundImage};">Sailing</a>
-    <a href="/hackclub" class="nav-button text-xl py-2 hover:scale-105 mr-4" style="background-image: {currentBackgroundImage};">Hack Club</a>
-    <a href="/portfolio" class="nav-button text-xl py-2 hover:scale-105" style="background-image: {currentBackgroundImage};">Things I've Made</a>
+<nav class="navbar mb-10 z-50" class:menu-open={menuOpen}>
+    <a href="/" class="nav-button text-xl py-2 hover:scale-105 mr-4" style="background-image: {currentBackgroundImage};" onclick={closeMenu}>About Me</a>
+    <a href="/sailing" class="nav-button text-xl py-2 hover:scale-105 mr-4" style="background-image: {currentBackgroundImage};" onclick={closeMenu}>Sailing</a>
+    <a href="/hackclub" class="nav-button text-xl py-2 hover:scale-105 mr-4" style="background-image: {currentBackgroundImage};" onclick={closeMenu}>Hack Club</a>
+    <a href="/portfolio" class="nav-button text-xl py-2 hover:scale-105" style="background-image: {currentBackgroundImage};" onclick={closeMenu}>Things I've Made</a>
 </nav>
 
 <style>
@@ -100,6 +104,7 @@
             background: rgba(0, 0, 0, 0.95);
             transform: translateX(-100%);
             transition: transform 0.3s ease;
+            z-index: 90;
         }
 
         .navbar.menu-open {
