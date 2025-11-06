@@ -6,7 +6,7 @@
     const images = ['profilecard1.png', 'profilecard2.png', 'profilecard3.png', 'profilecard4.png'];
     const currentBackgroundImage = $derived(`url('/${images[currentImageIndex]}')`);
 
-    let { children } = $props();
+    let { children, padding = '2rem' } = $props();
 
     onMount(() => {
         const interval = setInterval(() => {
@@ -20,7 +20,7 @@
 <div
     class="profile-card"
     data-tilt
-    style="background-image: {currentBackgroundImage};"
+    style="background-image: {currentBackgroundImage}; padding: {padding};"
 >
     {@render children?.()}
 </div>
@@ -32,7 +32,6 @@
         background-repeat: no-repeat;
         color: white;
         text-shadow: 1px 1px 2px black;
-        padding: 2rem;
         border-radius: 1rem;
         transition: all 0.3s ease;
     }
