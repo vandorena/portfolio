@@ -4,13 +4,16 @@ projects:
     image: /accelerate-screenie.png
     title: Accelerate
     description: My best website yet. (The coolest Hack Club YSWS)
+    hackclub: true
   - link: https://armed.hackclub.com
     iframe: https://armed.hackclub.com
     image: /armed-screenie.png
     title: Armed
     description: A YSWS I ran for Hack Club, that encouraged teenagers to learn ARM64 Assembly
+    hackclub: true
   - link: https://smelt.hackclub.com
     iframe: https://smelt.hackclub.com
     image: /smelt-screenie.png
     title: Smelt
     description: A YSWS based around web development using Svelte, and Sveltekit.
+    hackclub: true

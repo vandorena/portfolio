@@ -34,6 +34,10 @@
     <p>I love sailing! It's my favourite thing to do!</p>
     <h2>Results</h2>
     <h3>ILCA 6</h3>
+	<ul>
+		<li>2025 ILCA 6 Youth European Championships: 238th</li>
+		<li>2024 ILCA 6 Youth World Championships: 224th</li>
+	</ul>
     <h3>Topper</h3>
     <ul>
       <li>2023 Topper World Championships: 20th</li>
