@@ -15,5 +15,11 @@ projects:
     iframe: https://smelt.hackclub.com
     image: /smelt-screenie.png
     title: Smelt
-    description: A YSWS based around web development using Svelte, and Sveltekit.
+    description: A YSWS based around web development using Svelte, and Sveltekit. (Made with Sam Liu too)
+    hackclub: true
+  - link: https://touch.hackclub.com
+    iframe: https://touch.hackclub.com
+    image: /touch-grass-screenie.png
+    title: Touch Grass
+    description: A fun/joke YSWS where for every hour you code, I'd have to run 200m. (Made with Gus Ruben)
     hackclub: true
