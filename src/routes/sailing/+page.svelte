@@ -26,7 +26,7 @@
 </video>
 
 <section class="min-h-screen flex items-center justify-center relative z-10">
-  	<div class="prose prose-invert text-center bg-neutral-500/60 rounded-xl px-4" data-tilt>
+  	<div class="prose prose-invert text-center bg-neutral-500/60 rounded-xl px-4">
     
     
       <div class="flex items-center justify-center gap-3 mt-4">
