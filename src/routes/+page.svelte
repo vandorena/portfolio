@@ -21,7 +21,7 @@
 </script>
 <div class="min-h-screen flex flex-col items-center justify-center relative z-10">
 	<ProfileCard padding="0.5rem">
-		<img src="/me.webp" alt="Alex Van Doren" class="w-32 sm:w-40 md:w-50 rounded-xl"/>
+		<img src="/me.webp" alt="Alex Van Doren" class="w-32 sm:w-40 md:w-50 rounded-xl hover:cursor-crosshair"/>
 	</ProfileCard>
 
 	<div data-tilt class=" bg-neutral-950/20 py-10 px-6 rotate-1 cursor-crosshair mt-4">
@@ -43,4 +43,7 @@
 			overflow: hidden;
 		}
 	}
+	:global(body) {
+      overflow: hidden !important;
+         }
 </style>

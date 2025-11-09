@@ -141,4 +141,7 @@
 		height: 100%;
 		border: none;
 	}
+	:global(body) {
+      overflow: show !important;
+         }
 </style>

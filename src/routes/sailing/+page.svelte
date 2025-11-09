@@ -19,37 +19,56 @@
 	});
 
 </script>
-<section class="min-h-screen flex items-center justify-center relative z-10">
-  <div class="prose prose-invert text-center">
-    <ProfileCard padding="0.5rem">
-      <img src="/happyme.webp" alt="Alex Van Doren Sailing" class="w-32 sm:w-40 md:w-90 rounded-xl"/>
-    </ProfileCard>
 
-    <div class="flex items-center justify-center gap-3 mt-4">
-      <h1 class="mb-0">Sailing</h1>
-      <a href="https://www.instagram.com/alex.van.doren/" target="_blank" rel="noopener noreferrer" class="hover:scale-105">
-        <img src="/Instagram_Glyph_White.png" alt="Instagram" class="w-8 h-8"/>
-      </a>
-    </div>
-    <p>I love sailing! It's my favourite thing to do!</p>
-    <h2>Results</h2>
-    <h3>ILCA 6</h3>
-	<ul>
-		<li>2025 ILCA 6 Youth European Championships: 238th</li>
-		<li>2024 ILCA 6 Youth World Championships: 224th</li>
-	</ul>
-    <h3>Topper</h3>
-    <ul>
-      <li>2023 Topper World Championships: 20th</li>
-      <li>2022 Topper National Championships: 45th</li>
-    </ul>
+<!-- Video Background -->
+<video autoplay loop muted playsinline class="video-background" preload="auto" poster="/sailingfirst.png">
+	<source src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/d4af2a1f14b1bdcf024e0c925f0e3b906d4ba35b_pxl_20240831_122517100.mp4" type="video/mp4" />
+</video>
+
+<section class="min-h-screen flex items-center justify-center relative z-10">
+  	<div class="prose prose-invert text-center bg-neutral-500/60 rounded-xl px-4" data-tilt>
+    
+    
+      <div class="flex items-center justify-center gap-3 mt-4">
+        <h1 class="mb-0">Sailing</h1>
+        <a href="https://www.instagram.com/alex.van.doren/" target="_blank" rel="noopener noreferrer" class="hover:scale-105">
+          <img src="/Instagram_Glyph_White.png" alt="Instagram" class="w-8 h-8"/>
+        </a>
+      </div>
+      <p class="text-white">I love sailing! It's my favourite thing to do!</p>
+	  <p class="text-white">I see a future where sailing is both sustainable and accessible. That's why I'm an ambassador for <a href="https://www.cleansailors.org" class="font-bold text-blue-900 hover:cursor-pointer hover:scale-105 no-underline hover:text-blue-700 hover:underline">Clean Sailors</a>.</p>
+	  <p class="text-white">Check out my Insta!</p>
+      <h2>Results</h2>
+      <h3>ILCA 6</h3>
+      <ul class="text-white">
+        <li>2025 ILCA 6 Youth European Championships: 238th</li>
+        <li>2024 ILCA 6 Youth World Championships: 224th</li>
+      </ul>
+      <h3>Topper</h3>
+      <ul class="text-white">
+        <li>2023 Topper World Championships: 20th</li>
+        <li>2022 Topper National Championships: 45th</li>
+      </ul>
   </div>
 </section>
 
 <style>
+	.video-background {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		object-fit: cover;
+		z-index: 0;
+	}
+
 	@media (min-width: 768px) {
 		:global(body) {
 			overflow: hidden;
 		}
 	}
+	:global(body) {
+      overflow: hidden !important;
+         }
 </style>
