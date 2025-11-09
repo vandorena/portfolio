@@ -30,7 +30,7 @@
 		</h1>
 		<h2 class="text-2xl md:text-4xl font-condensed text-white mb-6 text-center">I'm a Gap Year engineer at Hack Club :D</h2>
 	</div>
-	<div class="prose prose-invert text-center mt-8 max-w-3xl mb-4">
+	<div class="prose prose-invert text-center mt-8 max-w-3xl mb-4 px-4 md:px-0">
 		<p>
 			Welcome to my personal website! <br> tl;dr: I'm 18, I love sailing, I live in Burlington, and I make really cool looking websites, and fun project based education programs for Hack Club!
 		</p>
@@ -43,7 +43,4 @@
 			overflow: hidden;
 		}
 	}
-	:global(body) {
-      overflow: hidden !important;
-         }
 </style>

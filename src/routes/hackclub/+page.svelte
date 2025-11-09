@@ -51,7 +51,9 @@
 		}
 	}
 
-	:global(body) {
-		overflow: hidden !important;
+	@media (min-width: 768px) {
+		:global(body) {
+			overflow: hidden;
+		}
 	}
 </style>
