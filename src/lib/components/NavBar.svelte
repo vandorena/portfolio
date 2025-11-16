@@ -36,7 +36,7 @@
     <a href="/" class="nav-button text-xl py-2 hover:scale-105 mr-4" style="background-image: {currentBackgroundImage};" onclick={closeMenu}>About Me</a>
     <a href="/sailing" class="nav-button text-xl py-2 hover:scale-105 mr-4" style="background-image: {currentBackgroundImage};" onclick={closeMenu}>Sailing</a>
     <a href="/hackclub" class="nav-button text-xl py-2 hover:scale-105 mr-4" style="background-image: {currentBackgroundImage};" onclick={closeMenu}>Hack Club</a>
-    <a href="/portfolio" class="nav-button text-xl py-2 hover:scale-105" style="background-image: {currentBackgroundImage};" onclick={closeMenu}>Things I've Made</a>
+    <a href="/portfolio" class="nav-button text-xl py-2 hover:scale-105" style="background-image: {currentBackgroundImage};" onclick={closeMenu}>My Projects</a>
 </nav>
 
 <style>
