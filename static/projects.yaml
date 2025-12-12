@@ -28,3 +28,4 @@ projects:
     image: /buildboardscreenie.png
     title: Buildboard
     description: A YSWS where instead of shipping out a prize, we shipped out exposure.
+    hackclub: true
