@@ -58,7 +58,7 @@
         </div>
         <div class="bg-black/50 rounded-sm mb-10">
             <p class=" prose text-base sm:text-lg md:text-xl text-white leading-relaxed py-3" style:font-family={readabilityMode ? 'Arial, sans-serif' : undefined}>
-                The way solutions get developed is changing. We have to acknowledge it.
+                The way we develop solutions is changing. We have to acknowledge it.
             </p>
         </div>
 	</div>	
