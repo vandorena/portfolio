@@ -5,19 +5,21 @@
 	let { data }: { data: PageData } = $props();
 </script>
 
-<div class="min-h-screen flex flex-col items-center justify-center relative z-10 py-12">
-	<div class="text-center mb-12 px-4">
-		<h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
-			Hack Club
-		</h1>
-		<p class="text-white/80 text-lg md:text-xl max-w-4xl mx-auto">
-			At Hack Club, I run You Ship We Ship (YSWS) programs that empower students to build and share their passion projects for prizes.
-		</p>
-		<p class="text-white/80 text-lg md:text-xl max-w-4xl mx-auto">So far I've been responsible for Hack Clubbers spending over <span class="gradient-text">4000</span> hours on their passion projects.</p>
-	</div>
+<div class="overflow-container pt-10">
+	<div class="min-h-screen flex flex-col items-center justify-center relative z-10 py-12">
+		<div class="text-center mb-12 px-4">
+			<h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
+				Hack Club
+			</h1>
+			<p class="text-white/80 text-lg md:text-xl max-w-4xl mx-auto">
+				At Hack Club, I run You Ship We Ship (YSWS) programs that empower students to build and share their passion projects for prizes.
+			</p>
+			<p class="text-white/80 text-lg md:text-xl max-w-4xl mx-auto">So far I've been responsible for Hack Clubbers spending over <span class="gradient-text">4000</span> hours on their passion projects.</p>
+		</div>
 
-	<div class="w-full rotate-5">
-		<ProjectCarousel projects={data.projects} />
+		<div class="w-full rotate-5">
+			<ProjectCarousel projects={data.projects} />
+		</div>
 	</div>
 </div>
 <style>
@@ -51,8 +53,16 @@
 		}
 	}
 
+	.overflow-container {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+	}
+
 	@media (min-width: 768px) {
-		:global(body) {
+		.overflow-container {
 			overflow: hidden;
 		}
 	}
