@@ -108,7 +108,6 @@
 	height: 90%;
 	background: white;
 	border-radius: 0;
-	overflow: hidden;
 	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
 }
 
