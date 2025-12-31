@@ -33,7 +33,7 @@
         </div>
         <div class="bg-black/50 rounded-sm mb-10">
             <p class=" prose text-base sm:text-lg md:text-xl text-white leading-relaxed py-3" style:font-family={readabilityMode ? 'Arial, sans-serif' : undefined}>
-                At Hack Club I've reviewed thousands of projects teens built using AI coding tools. What stands out is how easy it is to tell whether someone used AI to complement their skills or replace them entirely.
+                <a href="https://hackclub.com" class="underline hover:cursor-pointer text-white/90 hover:text-green-500">At Hack Club</a> I've reviewed thousands of projects teens built using AI coding tools. What stands out is how easy it is to tell whether someone used AI to complement their skills or replace them entirely.
             </p>
         </div>
         <div class="bg-black/50 rounded-sm mb-10">
@@ -48,7 +48,7 @@
         </div>
         <div class="bg-black/50 rounded-sm mb-10">
             <p class=" prose text-base sm:text-lg md:text-xl text-white leading-relaxed py-3" style:font-family={readabilityMode ? 'Arial, sans-serif' : undefined}>
-                <a href="https://hackclub.com" class="underline hover:cursor-pointer text-white/90 hover:text-green-500">@ Hack Club,</a> I'm helping lead this change.
+                <a href="https://hackclub.com" class="underline hover:cursor-pointer text-white/90 hover:text-green-500">At Hack Club,</a> I'm helping lead this change.
             </p>
         </div>
         <div class="bg-black/50 rounded-sm mb-10">
