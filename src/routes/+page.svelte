@@ -29,7 +29,9 @@
 			<h1 class="text-4xl md:text-6xl font-bold text-white mb-6 text-center">
 				I'm Alex Van Doren
 			</h1>
-			<h2 class="text-2xl md:text-4xl font-condensed text-white mb-6 text-center">I'm a Gap Year engineer at Hack Club :D</h2>
+			<h2 class="text-2xl md:text-4xl font-condensed text-white mb-6 text-center">I'm a Gap Year engineer at Hack Club :D
+				<br class="pt-5">And Student at Brown ('30)
+			</h2>
 		</div>
 		<div class="prose prose-invert text-center mt-8 max-w-3xl mb-4 px-4 md:px-0">
 			<p>
