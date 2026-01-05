@@ -43,7 +43,7 @@
 			<h3 class="text-lg md:text-2xl">ILCA 6</h3>
 			<ul class="text-white text-xs md:text-base">
 				<li>2025 ILCA 6 Youth European Championships: 238th</li>
-				<li>2024 ILCA 6 Youth World Championships: 224th</li>
+				<li>2024 ILCA 6 Youth European Championships: 224th</li>
 			</ul>
 			<h3 class="text-lg md:text-2xl">Topper</h3>
 			<ul class="text-white text-xs md:text-base">
