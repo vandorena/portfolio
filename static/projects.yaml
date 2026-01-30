@@ -29,3 +29,9 @@ projects:
     title: Buildboard
     description: A YSWS where instead of shipping out a prize, we shipped out exposure.
     hackclub: true
+  - link: https://meow.hackclub.com
+    iframe: https://meow.hackclub.com
+    image: /meow-screenie.png
+    title: Meow
+    description: A YSWS where you could earn a cat plushie by making a cat themed project.
+    hackclub: true
