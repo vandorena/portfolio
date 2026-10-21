@@ -22,8 +22,8 @@
 
 <div class="overflow-container">
 	<!-- Video Background -->
-	<video autoplay loop muted playsinline class="video-background" preload="auto" poster="/sailingfirst.png">
-		<source src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/d4af2a1f14b1bdcf024e0c925f0e3b906d4ba35b_pxl_20240831_122517100.mp4" type="video/mp4" />
+	<video autoplay loop muted playsinline class="video-background" preload="metadata" poster="/sailingfirst.jpg">
+		<source src="/sailing.mp4" type="video/mp4" />
 	</video>
 
 	<section class="min-h-[calc(100vh-7rem)] py-6 flex items-center justify-center relative z-10 px-2 md:px-0">
