@@ -32,23 +32,24 @@
 </button>
 
 <!-- Navigation Links -->
-<nav class="navbar mb-10 z-50" class:menu-open={menuOpen}>
-    <a href="/" class="nav-button text-xl py-2 hover:scale-105 mr-4" style="background-image: {currentBackgroundImage};" onclick={closeMenu}>About Me</a>
-    <a href="/sailing" class="nav-button text-xl py-2 hover:scale-105 mr-4" style="background-image: {currentBackgroundImage};" onclick={closeMenu}>Sailing</a>
-    <a href="/hackclub" class="nav-button text-xl py-2 hover:scale-105 mr-4" style="background-image: {currentBackgroundImage};" onclick={closeMenu}>Hack Club</a>
+<nav class="navbar z-50" class:menu-open={menuOpen}>
+    <a href="/" class="nav-button text-xl py-2 hover:scale-105" style="background-image: {currentBackgroundImage};" onclick={closeMenu}>About Me</a>
+    <a href="/sailing" class="nav-button text-xl py-2 hover:scale-105" style="background-image: {currentBackgroundImage};" onclick={closeMenu}>Sailing</a>
+    <a href="/hackclub" class="nav-button text-xl py-2 hover:scale-105" style="background-image: {currentBackgroundImage};" onclick={closeMenu}>Hack Club</a>
     <a href="/portfolio" class="nav-button text-xl py-2 hover:scale-105" style="background-image: {currentBackgroundImage};" onclick={closeMenu}>My Projects</a>
 </nav>
 
 <style>
     .navbar {
-        position: absolute;
-        top: 1.25rem;
-        left: 50%;
-        transform: translateX(-50%);
+        position: relative;
+        margin: 1.25rem auto 0;
+        padding: 0 1rem;
+        max-width: 100%;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        gap: 0;
+        gap: 0.75rem 1rem;
     }
 
     .nav-button {
@@ -57,7 +58,7 @@
         background-repeat: no-repeat;
         color: white;
         text-shadow: 1px 1px 2px black;
-        width: calc(200vw / 10);
+        width: clamp(9rem, 20vw, 16rem);
         display: inline-block;
         text-align: center;
         padding: 0.5rem 1rem;
@@ -97,8 +98,12 @@
             position: fixed;
             top: 0;
             left: 0;
+            margin: 0;
+            padding: 0;
             width: 100%;
             height: 100vh;
+            height: 100dvh;
+            flex-wrap: nowrap;
             flex-direction: column;
             justify-content: center;
             background: rgba(0, 0, 0, 0.95);
@@ -117,4 +122,4 @@
             margin: 0.5rem 0;
         }
     }
-</style>
+</style>

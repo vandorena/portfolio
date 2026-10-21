@@ -70,7 +70,7 @@
 
 	.project-link {
 		flex-shrink: 0;
-		width: 400px;
+		width: min(400px, 85vw);
 		text-decoration: none;
 		display: block;
 		opacity: 0.8;
@@ -103,7 +103,7 @@
 
 	@media (max-width: 768px) {
 		.project-link {
-			width: 300px;
+			width: min(300px, 80vw);
 		}
 
 		.carousel-track {

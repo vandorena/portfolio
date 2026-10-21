@@ -17,7 +17,7 @@
 
 <ShaderBackground/>
 <NavBar/>
-<div class="py-5">
+<div class="py-5 max-md:h-16">
 
 </div>
 {@render children?.()}

@@ -26,14 +26,14 @@
 		<source src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/d4af2a1f14b1bdcf024e0c925f0e3b906d4ba35b_pxl_20240831_122517100.mp4" type="video/mp4" />
 	</video>
 
-	<section class="min-h-screen flex items-center justify-center relative z-10 px-2 md:px-0">
+	<section class="min-h-[calc(100vh-7rem)] py-6 flex items-center justify-center relative z-10 px-2 md:px-0">
 		<div class="prose prose-sm md:prose-base prose-invert text-center bg-neutral-500/60 rounded-xl px-2 py-3 md:px-6 md:py-4 max-w-[95vw] md:max-w-prose">
 
 
 			<div class="flex items-center justify-center gap-2 md:gap-3 mt-2 md:mt-4">
 				<h1 class="mb-0 text-2xl md:text-4xl">Sailing</h1>
-				<a href="https://www.instagram.com/alex.van.doren/" target="_blank" rel="noopener noreferrer" class="hover:scale-105">
-					<img src="/Instagram_Glyph_White.png" alt="Instagram" class="w-6 h-6 md:w-8 md:h-8"/>
+				<a href="https://www.instagram.com/alex.van.doren/" target="_blank" rel="noopener noreferrer" class="flex items-center text-2xl md:text-4xl -translate-y-[0.5em] hover:scale-105">
+					<img src="/Instagram_Glyph_White.png" alt="Instagram" class="w-6 h-6 md:w-8 md:h-8 my-0"/>
 				</a>
 			</div>
 			<p class="text-white text-sm md:text-base">I love sailing! It's my favourite thing to do!</p>
@@ -41,12 +41,12 @@
 			<p class="text-white text-sm md:text-base">Check out my Insta!</p>
 			<h2 class="text-xl md:text-3xl">Results</h2>
 			<h3 class="text-lg md:text-2xl">ILCA 6</h3>
-			<ul class="text-white text-xs md:text-base">
+			<ul class="text-white text-sm md:text-base">
 				<li>2025 ILCA 6 Youth European Championships: 238th</li>
 				<li>2024 ILCA 6 Youth European Championships: 224th</li>
 			</ul>
 			<h3 class="text-lg md:text-2xl">Topper</h3>
-			<ul class="text-white text-xs md:text-base">
+			<ul class="text-white text-sm md:text-base">
 				<li>2023 Topper World Championships: 20th</li>
 				<li>2022 Topper National Championships: 45th</li>
 			</ul>
@@ -66,16 +66,8 @@
 	}
 
 	.overflow-container {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100vw;
-		height: 100vh;
-	}
-
-	@media (min-width: 768px) {
-		.overflow-container {
-			overflow: hidden;
-		}
+		position: relative;
+		width: 100%;
+		overflow-x: clip;
 	}
 </style>

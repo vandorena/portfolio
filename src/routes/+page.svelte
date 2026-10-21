@@ -20,7 +20,7 @@
 
 </script>
 <div class="overflow-container">
-	<div class="min-h-screen flex flex-col items-center justify-center relative z-10">
+	<div class="min-h-[calc(100vh-7rem)] flex flex-col items-center justify-center relative z-10">
 		<ProfileCard padding="0.5rem">
 			<img src="/me.webp" alt="Alex Van Doren" class="w-32 sm:w-40 md:w-50 rounded-xl hover:cursor-crosshair"/>
 		</ProfileCard>
@@ -29,13 +29,13 @@
 			<h1 class="text-4xl md:text-6xl font-bold text-white mb-6 text-center">
 				I'm Alex Van Doren
 			</h1>
-			<h2 class="text-2xl md:text-4xl font-condensed text-white mb-6 text-center">I'm a Gap Year engineer at Hack Club :D
-				<br class="pt-5">And Student at Brown ('30)
+			<h2 class="text-2xl md:text-4xl font-condensed text-white mb-6 text-center">I'm a student at Brown ('30)
+				<br class="pt-5">and ex-engineer at Hack Club :D
 			</h2>
 		</div>
 		<div class="prose prose-invert text-center mt-8 max-w-3xl mb-4 px-4 md:px-0">
 			<p>
-				Welcome to my personal website! <br> tl;dr: I'm 18, I love sailing, I live in Burlington, and I make really cool looking websites, and fun project based education programs for Hack Club!
+				Welcome to my personal website! <br> tl;dr: I'm 19, I love sailing, I immigrated to the US at 17, and I make really cool looking websites!
 			</p>
 		</div>
 	</div>
@@ -43,16 +43,8 @@
 
 <style>
 	.overflow-container {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100vw;
-		height: 100vh;
-	}
-
-	@media (min-width: 768px) {
-		.overflow-container {
-			overflow: hidden;
-		}
+		position: relative;
+		width: 100%;
+		overflow-x: clip;
 	}
 </style>

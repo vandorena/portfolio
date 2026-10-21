@@ -58,8 +58,8 @@
 	});
 </script>
 
-<section class="min-h-screen py-20 px-8 relative z-10">
-	<h1 class="text-5xl font-bold text-white text-center mb-12">
+<section class="min-h-screen py-10 px-4 sm:px-8 relative z-10">
+	<h1 class="text-3xl md:text-5xl font-bold text-white text-center mb-12">
 		Cool Things I've Made ٩(^ᗜ^)و
 	</h1>
 
@@ -91,10 +91,11 @@
 <style>
 	.iframe-modal {
 		position: fixed;
-		top: -20px;
+		top: 0;
 		left: 0;
 		width: 100vw;
-		height: 103vh;
+		height: 100vh;
+		height: 100dvh;
 		background: rgba(0, 0, 0, 0.8);
 		display: flex;
 		align-items: center;
