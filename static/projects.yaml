@@ -24,8 +24,8 @@ projects:
     title: Accelerate
     description: My best website yet. (The coolest Hack Club YSWS)
     hackclub: true
-  - link: https://armed.hackclub.com
-    iframe: https://armed.hackclub.com
+  - link: https://armed.alexvd.dev
+    iframe: https://armed.alexvd.dev
     image: /armed-screenie.png
     title: Armed
     description: A YSWS I ran for Hack Club, that encouraged teenagers to learn ARM64 Assembly
