@@ -3,7 +3,7 @@
 
 	interface Project {
 		link: string;
-		iframe: string;
+		iframe?: string;
 		image: string;
 		title: string;
 		description: string;

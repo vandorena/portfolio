@@ -5,7 +5,8 @@
 
 	interface Project {
 		link: string;
-		iframe: string;
+		// omitted for sites that refuse to be framed (X-Frame-Options / CSP)
+		iframe?: string;
 		image: string;
 		title: string;
 		description: string;
@@ -15,9 +16,11 @@
 	let showModal = $state(false);
 	let projects = $state<Project[]>([]);
 
-	function openIframe(url: string, event: MouseEvent) {
+	function openIframe(project: Project, event: MouseEvent) {
+		// no iframe url: let the link open normally in a new tab
+		if (!project.iframe) return;
 		event.preventDefault();
-		iframeUrl = url;
+		iframeUrl = project.iframe;
 		showModal = true;
 	}
 
@@ -65,7 +68,13 @@
 
 	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
 		{#each projects as project}
-			<a href={project.link} onclick={(e) => openIframe(project.iframe, e)} class="h-full flex">
+			<a
+				href={project.link}
+				target="_blank"
+				rel="noopener noreferrer"
+				onclick={(e) => openIframe(project, e)}
+				class="h-full flex"
+			>
 				<ProfileCard>
 					<img src={project.image} alt={project.title} class="mb-4 rounded-lg shadow-lg" />
 					<h2 class="text-2xl font-bold mb-4">{project.title}</h2>

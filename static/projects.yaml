@@ -5,13 +5,11 @@ projects:
     title: diffusion.pdf
     description: A PDF that generates images. It has a diffusion image model embedded into it!
   - link: https://stardance.hackclub.com
-    iframe: https://stardance.hackclub.com
     image: /stardance-screenie.png
     title: Stardance Challenge
     description: The largest STEM event of the summer, run by Hack Club in partnership with NASA, AMD and GitHub. Make projects, get prizes.
     hackclub: true
   - link: https://birbguessr.alexvd.dev
-    iframe: https://birbguessr.alexvd.dev
     image: /birbguessr-screenie.png
     title: Birbguessr
     description: A GeoGuessr-style game where you guess where on the Brown campus map a crocheted birb was hiding.
@@ -45,7 +43,6 @@ projects:
     description: A YSWS where instead of shipping out a prize, we shipped out exposure.
     hackclub: true
   - link: https://flavortown.hackclub.com
-    iframe: https://flavortown.hackclub.com
     image: /flavortown-screenie.png
     title: Flavortown
     description: A Hack Club event for teens 13-18, run with GitHub, where you cook up projects and earn prizes.
