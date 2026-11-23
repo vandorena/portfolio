@@ -10,6 +10,7 @@
 		image: string;
 		title: string;
 		description: string;
+		repo?: string;
 	}
 
 	let iframeUrl = $state<string | null>(null);
@@ -68,19 +69,33 @@
 
 	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
 		{#each projects as project}
-			<a
-				href={project.link}
-				target="_blank"
-				rel="noopener noreferrer"
-				onclick={(e) => openIframe(project, e)}
-				class="h-full flex"
-			>
+			<div class="h-full flex">
 				<ProfileCard>
-					<img src={project.image} alt={project.title} class="mb-4 rounded-lg shadow-lg" />
-					<h2 class="text-2xl font-bold mb-4">{project.title}</h2>
-					<p class="text-lg">{project.description}</p>
+					<div class="flex flex-col h-full">
+						<a
+							href={project.link}
+							target="_blank"
+							rel="noopener noreferrer"
+							onclick={(e) => openIframe(project, e)}
+							class="flex-1"
+						>
+							<img src={project.image} alt={project.title} class="mb-4 rounded-lg shadow-lg" />
+							<h2 class="text-2xl font-bold mb-4">{project.title}</h2>
+							<p class="text-lg">{project.description}</p>
+						</a>
+						{#if project.repo}
+							<a
+								href={project.repo}
+								target="_blank"
+								rel="noopener noreferrer"
+								class="repo-button mt-4 self-start"
+							>
+								repo ↗
+							</a>
+						{/if}
+					</div>
 				</ProfileCard>
-			</a>
+			</div>
 		{/each}
 	</div>
 </section>
@@ -143,6 +158,18 @@
 	.close-button:hover {
 		background: rgba(193, 14, 145, 0.628);
 		transform: scale(1.1);
+	}
+
+	.repo-button {
+		padding: 0.25rem 0.75rem;
+		border: 1px solid white;
+		background: rgba(0, 0, 0, 0.4);
+		font-weight: bold;
+		transition: all 0.2s ease;
+	}
+
+	.repo-button:hover {
+		background: rgba(193, 14, 145, 0.628);
 	}
 
 	.project-iframe {

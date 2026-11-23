@@ -1,61 +1,77 @@
 projects:
+  - link: https://findme.alexvd.dev
+    image: /findme-screenie.png
+    repo: https://github.com/vandorena/findme
+    title: findme
+    description: Pinpoints your location from the sound of planes flying overhead.
   - link: https://diffusion.alexvd.dev
     iframe: https://diffusion.alexvd.dev
     image: /diffusion-screenie.png
+    repo: https://github.com/vandorena/diffusion.pdf
     title: diffusion.pdf
     description: A PDF that generates images. It has a diffusion image model embedded into it!
   - link: https://stardance.hackclub.com
     image: /stardance-screenie.png
+    repo: https://github.com/hackclub/stardance
     title: Stardance Challenge
     description: The largest STEM event of the summer, run by Hack Club in partnership with NASA, AMD and GitHub. Make projects, get prizes.
     hackclub: true
   - link: https://birbguessr.alexvd.dev
     image: /birbguessr-screenie.png
+    repo: https://github.com/vandorena/birbguessr
     title: Birbguessr
     description: A GeoGuessr-style game where you guess where on the Brown campus map a crocheted birb was hiding.
   - link: https://slop.alexvd.dev
     iframe: https://slop.alexvd.dev
     image: /slop-screenie.png
+    repo: https://github.com/vandorena/sloppdf
     title: sloppdf
     description: A story, written live, from inside a PDF.
   - link: https://accelerate.hackclub.com
     iframe: https://accelerate.hackclub.com
     image: /accelerate-screenie.png
+    repo: https://github.com/hackclub/accelerate
     title: Accelerate
     description: My best website yet. (The coolest Hack Club YSWS)
     hackclub: true
   - link: https://armed.alexvd.dev
     iframe: https://armed.alexvd.dev
     image: /armed-screenie.png
+    repo: https://github.com/hackclub/armed
     title: Armed
     description: A YSWS I ran for Hack Club, that encouraged teenagers to learn ARM64 Assembly
     hackclub: true
   - link: https://smelt.hackclub.com
     iframe: https://smelt.hackclub.com
     image: /smelt-screenie.png
+    repo: https://github.com/hackclub/smelt
     title: Smelt
     description: A YSWS based around web development using Svelte, and Sveltekit. (Made with Sam Liu too)
     hackclub: true
   - link: https://buildboard.hackclub.com/?utm_source=avd_portfolio
     iframe: https://buildboard.hackclub.com/?utm_source=avd_portfolio
     image: /buildboardscreenie.png
+    repo: https://github.com/hackclub/buildboard
     title: Buildboard
     description: A YSWS where instead of shipping out a prize, we shipped out exposure.
     hackclub: true
   - link: https://flavortown.hackclub.com
     image: /flavortown-screenie.png
+    repo: https://github.com/hackclub/flavortown
     title: Flavortown
     description: A Hack Club event for teens 13-18, run with GitHub, where you cook up projects and earn prizes.
     hackclub: true
   - link: https://touch.hackclub.com
     iframe: https://touch.hackclub.com
     image: /touch-grass-screenie.png
+    repo: https://github.com/hackclub/Touch-Grass
     title: Touch Grass
     description: A fun/joke YSWS where for every hour you code, I'd have to run 200m. (Made with Gus Ruben)
     hackclub: true
   - link: https://meow.hackclub.com
     iframe: https://meow.hackclub.com
     image: /meow-screenie.png
+    repo: https://github.com/hackclub/meow
     title: Meow
     description: A YSWS where you could earn a cat plushie by making a cat themed project.
     hackclub: true
