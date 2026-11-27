@@ -1,4 +1,9 @@
 projects:
+  - link: https://nhn.alexvd.dev
+    image: /nhn-screenie.png
+    repo: https://github.com/vandorena/local-shown-hn
+    title: Nearby Hacker News
+    description: Show HN projects tied to a specific city, town or county, on a map and listed like the HN front page.
   - link: https://findme.alexvd.dev
     image: /findme-screenie.png
     repo: https://github.com/vandorena/findme
